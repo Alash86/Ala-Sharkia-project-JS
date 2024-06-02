@@ -96,35 +96,35 @@ h1 {
 }
 
 .up {
-    background-image: url(./images/up.png);
+    background-image: url(../images/up.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .down {
-    background-image: url(./images/down.png);
+    background-image: url(../images/down.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .pause {
-    background-image: url(./images/pause.png);
+    background-image: url(../images/pause.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .right {
-    background-image: url(./images/right.png);
+    background-image: url(../images/right.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .left {
-    background-image: url(./images/left.png);
+    background-image: url(../images/left.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
