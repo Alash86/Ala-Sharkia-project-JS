@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-color: #70a1ff;
+    background-image: linear-gradient(315deg, #70a1ff 0%, #c2c0c0 74%);
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+#board {
+
+    margin: auto;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    border: 4px solid black;
+    background-color: #ebe3e3;
+    width: 500px;
+    height: 500px;
+
+}
+
+#board>div {
+    height: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px ridge #ccc;
+    border-radius: 50%;
+    margin: 5px;
+    color: black;
+    background-color: #fff;
+}
+
+
+#player1>h2 {
+    font-size: 20px;
+    color: blue;
+}
+
+#player2>h2 {
+    font-size: 20px;
+    color: green;
+
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #70a1ff;
+    background-image: linear-gradient(315deg, #70a1ff 0%, #c2c0c0 74%);
+
+}
+
+button:hover {
+    background-color: #c2c0c0;
+    background-image: linear-gradient(315deg, #c2c0c0 0%, #70a1ff 74%);
+}
+
+.one,
+.two {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.turn {
+
+    animation: blinker 1s linear infinite;
+    background-color: red;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #board {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    #board>div {
+        height: 75%;
+        width: 75%;
+    }
+
+    #player1,
+    #player2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .players {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one,
+    .two {
+        width: 60px;
+        height: 60px;
+    }
+
+    #player1>h2,
+    #player2>h2,
+    span,
+    button {
+        font-size: 14px;
+    }
+
+    button {
+        width: 90px;
+        height: 40px;
+    }
+
+}

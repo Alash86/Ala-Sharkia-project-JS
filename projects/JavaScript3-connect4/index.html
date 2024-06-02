@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Connect 4</title>
+</head>
+
+<body onload="createBoard(),checkTurn()">
+    <h1>4 בשורה</h1>
+    <div id="board"></div>
+
+    <div class="players">
+        <div id="player1">
+            <h2>שחקן 1</h2>
+            <div class="one"></div>
+            <h2>מספר נצחונות</h2><span></span>
+        </div>
+
+        <button onclick="reset()">איפוס ניקוד</button>
+
+        <div id="player2">
+            <h2>שחקן 2</h2>
+            <div class="two"></div>
+            <h2>מספר נצחונות</h2><span></span>
+
+        </div>
+    </div>
+</body>
+
+</html>

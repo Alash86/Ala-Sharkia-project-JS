@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./sctipts/script.js" defer></script>
+    <title>Star Wars API</title>
+</head>
+
+<body onload="stopLoader()">
+    <h1>Star Wars API</h1>
+    <select name="" id="choose" onchange="apiChoose()" required>
+        <option>Pls select catagory</option>
+        <option>films</option>
+        <option>people</option>
+        <option>planets</option>
+        <option>species</option>
+    </select>
+    <div class="loader"></div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Release_date</th>
+                    <th>Episode_id</th>
+                    <th>Producer</th>
+                    <th>Characters</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
