@@ -1,6 +1,6 @@
 const board = document.querySelector("#board");
 const width = window.screen.width < 640 ? 20 : 40;
-const height = window.screen.height < 800 ? 20 : 40;
+const height = window.screen.height < 1080 ? 20 : 40;
 const cols = 3;
 const snake = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 const divs = [];
